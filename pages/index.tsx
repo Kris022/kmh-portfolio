@@ -12,8 +12,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Hero />
-      <About />
+      <div className="max-w-[1000px] mx-auto">
+        <Hero />
+        <About />
+      </div>
       <Footer />
     </div>
   );
