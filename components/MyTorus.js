@@ -1,12 +1,15 @@
 import { useEffect, useRef } from "react";
 import { Canvas, useThree, useFrame, useLoader } from "@react-three/fiber";
 import * as THREE from "three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+
 
 const MyRotatingKnot = () => {
   const myMesh = useRef();
   const [map] = useLoader(THREE.TextureLoader, [
     "https://bruno-simon.com/prismic/matcaps/3.png",
   ]);
+  
 
   useFrame(({ clock }) => {
     const t = clock.getElapsedTime();

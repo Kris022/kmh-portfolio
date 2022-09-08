@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Hero from "../components/Hero";
 import About from "../components/About";
+import ProjectGird from "../components/ProjectGird"
+
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +16,7 @@ const Home: NextPage = () => {
       <div className="max-w-[1000px] mx-auto">
         <Hero />
         <About />
+        <ProjectGird />
       </div>
     </div>
   );
