@@ -4,8 +4,8 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import ProjectGird from "../components/ProjectGird"
 
-
 const Home: NextPage = () => {
+
   return (
     <div>
       <Head>

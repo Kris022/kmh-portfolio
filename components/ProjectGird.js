@@ -7,6 +7,8 @@ import vleImg from "../public/vle.jpg";
 import lvlImg from "../public/level-generation.jpg";
 
 export default function ProjectGird() {
+  
+
   return (
     <div className="w-full">
       <div id="projects" className="max-w-[800px] mx-auto px-2 py-16">
@@ -16,25 +18,25 @@ export default function ProjectGird() {
             title="Portfolio Website"
             desc="Next.js, React, Tailwindcss"
             thumbnail={portfolioImg}
-            url="/works/portfolio-website/#portfolio-website"
+            url="/works/portfolio-website"
           />
           <ProjectItem
             title="Facial Recognition Gateway"
             desc="Python, OpenCV, TKinter"
             thumbnail={faceRecImg}
-            url="/works/portfolio-website/#portfolio-website"
+            url="/works/opencv-project"
           />
           <ProjectItem
             title="Simple VLE"
             desc="JS, PHP, XAMPP"
             thumbnail={vleImg}
-            url="/works/portfolio-website/#portfolio-website"
+            url="/works/simpleVLE"
           />
           <ProjectItem
             title="Procedural Level Generation"
             desc="C++, SFML"
             thumbnail={lvlImg}
-            url="/works/portfolio-website/#portfolio-website"
+            url="/works/dungeon-crawler-project"
           />
         </div>
       </div>
@@ -45,9 +47,13 @@ export default function ProjectGird() {
 const ProjectItem = (props) => {
   const { title, desc, thumbnail, url } = props;
 
+  const handleScrollClick = event => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  } 
+
   return (
-    <Link href={url}>
-      <div className="relative flex flex-col items-center justify-center h-auto w-full p-4 cursor-pointer">
+    <Link href={url} onClick={handleScrollClick}>
+      <div className="relative flex flex-col items-center justify-center h-auto w-full p-4 cursor-pointer hover:bg-slate-700 rounded-lg hover:shadow-2xl ease-in duration-100">
         <div>
           <Image className="rounded-md" src={thumbnail}></Image>
         </div>
