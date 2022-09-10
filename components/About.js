@@ -13,8 +13,7 @@ export default function About() {
           soon after.
         </p>
         <p className="text-xl mt-3">
-          Part time I work as a programing tutor for an educational start up
-          firm.
+          Part time I work as a programing tutor for an online teaching start up.
         </p>
       </div>
 
