@@ -51,13 +51,7 @@ export default function Navbar() {
             </Link>
           </li>
 
-          <Link href="/contact">
-            <li className="flex">
-              <span className="p-4 hover:bg-orange-500 rounded-lg cursor-pointer ease-in duration-100">
-                contact
-              </span>
-            </li>
-          </Link>
+          
         </ul>
 
         {/* Mobile Navigation */}
@@ -92,13 +86,6 @@ export default function Navbar() {
               </Link>
             </li>
 
-            <li onClick={handleNav} className="p-4">
-              <Link href="/contact">
-                <span className="p-4 hover:underline rounded-lg cursor-pointer ease-in duration-100">
-                  contact
-                </span>
-              </Link>
-            </li>
           </ul>
         </div>
       </div>
