@@ -14,6 +14,8 @@ export default function Document() {
 					rel="stylesheet"
 				/>
 
+				<meta name="viewport" content="width=device-width" />
+
 			</Head>
 			<body>
 				<Main />
