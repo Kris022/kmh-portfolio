@@ -3,7 +3,7 @@ import { AiOutlineGithub } from "react-icons/ai";
 
 export default function About() {
   return (
-    <div id="about" className="max-w-[1000px] h-screen m-auto flex flex-col">
+    <div id="about" className="max-w-[1000px] h-screen m-auto flex flex-col border">
 
       <div className="mt-[20%] p-4">
         <h1 className="text-4xl">About</h1>
